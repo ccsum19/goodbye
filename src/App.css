@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #517fc9; /* 부드러운 하늘색 배경 */
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  text-align: center;
+  background-color: #ffffff; /* 흰색 배경 */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3 {
+  color: #007acc; /* 진한 하늘색 텍스트 */
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.character-image {
+  width: 150px; /* 이미지 크기 설정 */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+
+button {
+  background-color: #007acc; /* 진한 하늘색 버튼 */
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #345086; /* 버튼 호버 효과 */
+}
+
+h4 {
+  color: #666666; /* 회색 텍스트 */
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
